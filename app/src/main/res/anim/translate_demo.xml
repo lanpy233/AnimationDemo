@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shareInterpolator="true">
+    <!-- 平移动画,对应TranslateAnimation -->
+  　<translate
+      android:fromXDelta="float"
+      android:fromYDelta="float"
+      android:toXDelta="float"
+      android:toYDelta="float"
+      ></translate>
+
+    <!-- 缩放动画,对应ScaleAnimation-->
+    <scale
+        android:fromXScale="float"
+        android:fromYScale="float"
+        android:toXScale="float"
+        android:toYScale="float"
+        android:pivotX="float"
+        android:pivotY="float"></scale>
+
+    <!-- 透明度动画,对应AlphaAnimation-->
+    <alpha
+        android:fromAlpha="float"
+        android:toAlpha="float"></alpha>
+
+    <!-- 旋转动画,对应RotateAnimation-->
+    <rotate
+        android:fromDegrees="float"
+        android:toDegrees="float"
+        android:pivotX="float"
+        android:pivotY="float"></rotate>
+</set>
