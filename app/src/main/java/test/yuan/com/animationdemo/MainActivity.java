@@ -8,7 +8,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements Animation.AnimationListener{
 
     private TextView mTextView;
 
@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private void showXmlAnimation(View view){
         Animation animation = AnimationUtils.loadAnimation(this,R.anim.translate_demo);
+        animation.setAnimationListener(this);
         view.startAnimation(animation);
     }
 
@@ -39,5 +40,20 @@ public class MainActivity extends AppCompatActivity {
         AlphaAnimation alphaAnimation = new AlphaAnimation(0,1);
         alphaAnimation.setDuration(300);
         mTextView.startAnimation(alphaAnimation);
+    }
+
+    @Override
+    public void onAnimationStart(Animation animation) {
+
+    }
+
+    @Override
+    public void onAnimationEnd(Animation animation) {
+
+    }
+
+    @Override
+    public void onAnimationRepeat(Animation animation) {
+
     }
 }

@@ -3,30 +3,30 @@
     android:shareInterpolator="true">
     <!-- 平移动画,对应TranslateAnimation -->
   　<translate
-      android:fromXDelta="float"
-      android:fromYDelta="float"
-      android:toXDelta="float"
-      android:toYDelta="float"
+      android:fromXDelta="0.0"
+      android:fromYDelta="0.0"
+      android:toXDelta="100"
+      android:toYDelta="100"
       ></translate>
 
     <!-- 缩放动画,对应ScaleAnimation-->
     <scale
-        android:fromXScale="float"
-        android:fromYScale="float"
-        android:toXScale="float"
-        android:toYScale="float"
-        android:pivotX="float"
-        android:pivotY="float"></scale>
+        android:fromXScale="0.5"
+        android:fromYScale="0.5"
+        android:toXScale="1.2"
+        android:toYScale="1.2"
+        android:pivotX="0"
+        android:pivotY="0"></scale>
 
     <!-- 透明度动画,对应AlphaAnimation-->
     <alpha
-        android:fromAlpha="float"
-        android:toAlpha="float"></alpha>
+        android:fromAlpha="0"
+        android:toAlpha="1"></alpha>
 
     <!-- 旋转动画,对应RotateAnimation-->
     <rotate
-        android:fromDegrees="float"
-        android:toDegrees="float"
-        android:pivotX="float"
-        android:pivotY="float"></rotate>
+        android:fromDegrees="0"
+        android:toDegrees="180"
+        android:pivotX="0"
+        android:pivotY="0"></rotate>
 </set>
